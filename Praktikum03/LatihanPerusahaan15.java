@@ -14,7 +14,7 @@ public class LatihanPerusahaan15 {
         gajisamabonus = totalgajikotor * 0.1 + totalgajikotor;
         System.out.println("Berikut adalah jumlah gaji sama bonus: " + gajisamabonus);
         totalgajibersih = gajisamabonus - 0.05 * gajisamabonus;
-        System.out.println("Berikut total gaji bersih anda: " + totalgajibersih);
+        System.out.println("Berikut total gaji bersih h anda: " + totalgajibersih);
 
         sc.close();
     }

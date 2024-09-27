@@ -7,16 +7,11 @@ public class LatihanListrik15 {
         int tarifListrik, penggunaanListrik, tagihan,
         listrikLebih = 500;
         tarifListrik = 1500;
-
-        System.out.println("masukkan jumlah penggunaan listrik (kWh)");
+        System.out.println("Masukkan jumlah penggunaan listrik (kWh) ");
         penggunaanListrik = sc.nextInt();
-
-        tagihan = penggunaanListrik = tarifListrik;
-        System.out.println("Berikut adalah tagihan listrik anda" + tagihan);
-
-        System.out.println("Apakah listrik lebih dari 500 kWh" + (listrikLebih < penggunaanListrik));
-
+        tagihan = penggunaanListrik * tarifListrik;
+        System.out.println("Berikut adalah tagihan listrik anda " + tagihan);
+        System.out.println("Apakah listrik lebih dari 500 kWh " + (penggunaanListrik > listrikLebih));
         sc.close();
-
     }
-}
+} 
