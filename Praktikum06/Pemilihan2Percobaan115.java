@@ -1,4 +1,4 @@
-package Prakrikum06;
+package Praktikum06;
 import java.util.Scanner;
 public class Pemilihan2Percobaan115 {
     public static void main(String[] args) {

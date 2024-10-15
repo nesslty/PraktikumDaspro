@@ -1,4 +1,4 @@
-package Prakrikum06;
+package Praktikum06;
 
 import java.util.Scanner;
 public class Tugas02 {
