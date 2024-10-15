@@ -7,7 +7,7 @@ public class Pemilihan2Percobaan215 {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int pilihanMenu, harga;
-    String member;
+    String member, qris;
     double diskon, total_bayar;
 
     System.out.println("-----------------------");
@@ -22,16 +22,19 @@ public class Pemilihan2Percobaan215 {
     sc.nextLine();
     System.out.println("Apakah punya member (y/n) ? = ");
     member = sc.nextLine();
+    System.out.println("Apakah pembayaran QRIS (y/n) ? =");
+    qris = sc.nextLine();
     System.out.println("-----------------------");
+
     if (member.equalsIgnoreCase("y")) {
         diskon = 0.10;
         System.out.println("Besar diskon = 10%");
         if (pilihanMenu == 1) {
-        harga = 14000;
-        System.out.println("Harga Rice Bowl = " + "harga");
+            harga = 14000;
+            System.out.println("Harga Rice Bowl = " + "harga");
         } else if (pilihanMenu == 2) {
-        harga = 3000;
-        System.out.println("Harga Ice Tea = " + "harga");
+            harga = 3000;
+            System.out.println("Harga Ice Tea = " + "harga");
         } else if (pilihanMenu == 3) {
         harga = 15000;
         System.out.println("Harga Bunding = " + "harga");
@@ -40,9 +43,15 @@ public class Pemilihan2Percobaan215 {
         return;
         }
         total_bayar = harga - (harga * diskon);
+        System.out.println(total_bayar);
+        // jika bayar dengan qris dipotong 1.000
+        if (qris.equalsIgnoreCase("y")) {
+            System.out.println("Mendapat potongan 1.000 karena metode QRIS");
+            total_bayar -= 1000; // bentuk sederhana dari total_bayar = total_bayar - 1000;
+        }
+
         System.out.println("Total bayar setelah diskon = " + total_bayar);
-    }
-    else if (member.equalsIgnoreCase("n")) {
+    } else if (member.equalsIgnoreCase("n")) {
         if (pilihanMenu == 1) {
         harga = 14000;
         System.out.println("Harga Rice Bowl = " + harga);
@@ -55,6 +64,12 @@ public class Pemilihan2Percobaan215 {
         } else {
         System.out.println("Masukkan pilihan menu dengan benar");
             return;
+        }
+
+        // jika bayar dengan qris dipotong 1.000
+        if (qris.equalsIgnoreCase("y")) {
+            System.out.println("Mendapat potongan 1.000 karena metode QRIS");
+            harga -= 1000; // bentuk sederhana dari total_bayar = total_bayar - 1000;
         }
 
         System.out.println("Total bayar = " + harga);
