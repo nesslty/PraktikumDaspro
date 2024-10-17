@@ -23,16 +23,16 @@ public class Tugas02 {
             jumlahBuku = sc.nextInt();
 
             if (jenisBuku == 1) {
-                // System.out.println("kamus");
+                System.out.println("kamus");
                 diskon = 10;
                 if (jumlahBuku > 2) {
                     diskon += 2;
                 } 
             } else if (jenisBuku == 2) {
-                // System.out.println("novel");
+                System.out.println("novel");
                 diskon = 7;
                 if (jumlahBuku > 3) {
-                    // diskon = diskon + 10;
+                    diskon = diskon + 10;
                     diskon += 2;
                 } else if (jumlahBuku <= 3) {
                     diskon += 1;
