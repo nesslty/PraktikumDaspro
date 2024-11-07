@@ -25,7 +25,6 @@ public class TugasKedua15 {
                 System.out.print("Nama Atlet ke- " + j + " = ");
                 namaAtlet += sc.nextLine() + " ";
             }
-
             System.out.println(namaAtlet);
         } while (true);
         sc.close();
