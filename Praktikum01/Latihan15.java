@@ -1,6 +1,3 @@
-/**
- * Latihan15
- */
 public class Latihan15 {
 
     public static void main(String[] args) {

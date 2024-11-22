@@ -1,6 +1,7 @@
 package Praktikum08;
 import java.util.Scanner;
 public class TugasPertama15 {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -22,5 +23,6 @@ public class TugasPertama15 {
             }
             System.out.println();
         }     
+        sc.close();
     }
 }
