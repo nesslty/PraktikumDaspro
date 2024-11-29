@@ -1,8 +1,8 @@
-// import java.util.Scanner;
+// 
 public class kafe15 {
     
 
-    // Scanner sc = new Scanner(System.in);
+    // 
     // String namaPelanggan = "Andi";
     // boolean isMember = true;
     // int totalAkhir = 0;
@@ -20,8 +20,8 @@ public class kafe15 {
 //     System.out.print("Berapa jenis menu yang ingin Anda pesan? ");
 //     int jumlahMenu = sc.nextInt();
 //     for (int i = 0; i < jumlahMenu; i++) {
-//         System.out.print("Masukkan nomor menu yang ingin anda pesan: ");
-//         int pilihanMenu = sc.nextInt();
+//         
+//         
 
 //         if (pilihanMenu < 1) {
 //             System.out.println("tidak valid, silahkan coba lagi");
@@ -61,7 +61,7 @@ public class kafe15 {
 //     }
 
 //     public static int hitungTotalHarga (int pilihanMenu, int banyakItem) {
-//         int [] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
+//         ;
 //       return hargaItems[pilihanMenu - 1] * banyakItem;
 //     }
 //     public static int hitungDiskon (int totalHarga, String promo) {
